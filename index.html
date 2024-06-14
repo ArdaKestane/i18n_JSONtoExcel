@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algönder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Algönder</h1>
+        <h2>Translation Excel Import / Export</h2>
+      </header>
+
+      <div class="main-content">
+        <div id="import-export" class="action-buttons">
+          <button id="import" class="btn">Import</button>
+          <button id="export" class="btn">Export</button>
+        </div>
+
+        <div id="import-options" class="options" style="display: none">
+          <div class="file-select-buttons">
+            <button id="select-old-file" class="btn">From Project</button>
+            <span id="selected-old-file">No file selected</span>
+          </div>
+          <div class="file-select-buttons">
+            <button id="select-new-file" class="btn">From Outside</button>
+            <span id="selected-new-file">No file selected</span>
+          </div>
+          <div class="btn-wrapper">
+            <button id="create-import-excel" class="btn">
+              Create Import Excel
+            </button>
+          </div>
+        </div>
+
+        <div id="export-options" class="options" style="display: none">
+          <div class="file-select-buttons">
+            <button id="select-tr" class="btn">Select Turkish File</button>
+            <span id="selected-tr-file">No file selected</span>
+          </div>
+          <div class="file-select-buttons">
+            <button id="select-en" class="btn">Select English File</button>
+            <span id="selected-en-file">No file selected</span>
+          </div>
+          <div class="btn-wrapper">
+            <button id="create-excel" class="btn">Create Excel</button>
+          </div>
+        </div>
+
+        <div id="export-options" class="options" style="display: none">
+          <h2>Export Translation Files</h2>
+          <div class="btn-wrapper">
+            <button id="create-excel" class="btn">Create Excel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
